@@ -1,0 +1,242 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* overall css */
+
+body {
+    font-family: Roboto;
+    font-weight: lighter; 
+}
+
+header {
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-family: Roboto; 
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+
+/* nav section */
+
+nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 0; 
+    background-color: #BBD6B8;
+   
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px 0 0; 
+    margin: 0 0 0 50px;
+}
+
+.nav-left img {
+    width: 150px; 
+    border-radius: 50%;
+}
+
+.nav-right {
+    display: flex; 
+    align-content: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.nav-right ul {
+    display: flex; 
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 30px;
+}
+
+ul li a:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+/* welcome section */
+
+h1 {
+    font-family: Sacramento; 
+    font-size: 60px; 
+    font-weight: bold;
+    padding: 30px 30px; 
+    animation: unblur 10s 1s 2;
+}
+
+    @keyframes unblur {
+        from {
+          text-shadow: 0 0 8px #c0c0c0;
+        }
+        to {
+          text-shadow: 0;
+        }
+      }
+  
+
+
+#home {
+    text-align: center; 
+    background-color:#94AF9F;
+    font-size: 20px;
+}
+
+/* hero section */
+
+#plants {
+    width: 100%; 
+    height: 300px; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./images/natalie-kovach-ph7QQq63lCs-unsplash.jpg);
+    opacity: 70%;
+}
+
+.text {
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.text h2 {
+    font-family: Sacramento; 
+    font-size: 45px;
+}
+
+#monstera {    
+    width: auto;
+    height: 200px; 
+    margin-right: 100px;
+    border-radius: 10%;
+}
+
+/* plant help care section */
+
+#emergency {
+    text-align: center;
+    background-color: #94AF9F;
+}
+
+#emergency > h2 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family: Sacramento; 
+    font-size: 45px; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px; 
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.grid-item {
+    border: 2px solid #DBE4C6;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 150px; 
+    font-size: 22px;
+    text-decoration: none; 
+}
+
+.grid-item:hover {
+    background-color: #DBE4C6;
+}
+
+.grid-container a {
+    text-decoration: none;
+    color: black;
+}
+
+/* footer section */
+
+footer {
+    background-color: #DBE4C6;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    font-family: Sacramento; 
+}
+
+footer h2 {
+    font-family: Sacramento; 
+    font-size: 45px; 
+}
+
+footer > form {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+form > input, textarea {
+    border: none;
+}
+
+form > input {
+    height: 20px; 
+    width: 100%; 
+}
+
+#github_logo {
+    width: 50px;
+    height: auto; 
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+textarea:focus, input:focus {
+    background-color: #94AF9F;
+}
+
+#submit {
+    border: none; 
+    padding: 10px; 
+    width: 70px; 
+    margin-bottom: 30px;
+    background-color:#BBD6B8;
+    border-radius: 20px;
+}
+
+#submit:hover {
+    background-color: #94AF9F;
+}
